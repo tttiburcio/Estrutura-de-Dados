@@ -1,0 +1,26 @@
+import OperacaoController;
+public class View {
+
+}
+public static void main(String[] args) {
+        Pilha p = new Pilha;
+        for (int i = 0; i < 15; i++) {
+
+            int rand = (int) ((math.random() * 50) + 1);
+            p.push();
+        }
+    }
+-------------------------------------------
+    package view;
+        import model.Pilha;
+        public class Principal{
+
+            public static void main(String[] args){
+                Pilha p = new Pilha();
+                boolean vazia = p.isEmpty();
+                System.out.println(vazia);
+                p.push(1);
+                p.push(2);
+                p.push(3);
+            }
+        }
