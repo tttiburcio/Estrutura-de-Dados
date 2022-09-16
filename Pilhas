@@ -1,0 +1,74 @@
+import OperacaoController;
+public class View {
+
+}
+public static void main(String[] args) {
+        Pilha p = new Pilha;
+        for (int i = 0; i < 15; i++) {
+
+            int rand = (int) ((math.random() * 50) + 1);
+            p.push();
+        }
+    }
+-------------------------------------------
+    package view;
+        import model.Pilha;
+        public class Principal{
+
+            public static void main(String[] args){
+                Pilha p = new Pilha();
+                boolean vazia = p.isEmpty();
+                System.out.println(vazia);
+                p.push(1);
+                p.push(2);
+                p.push(3);
+            }
+        }
+
+public class Controller {
+    public Pilha(){
+        this.posicaoPilha = -1;
+        this.pilha = new Object[15];
+    }
+
+    public class Random2 {
+        Random gerador = new Random ();
+        Pilha p = new Pilha;
+        }
+
+    }
+}
+
+------------------------------------
+
+        package model;
+public class Pilha{
+
+    No topo;
+    public Pilha(){
+        topo = null;
+    }
+
+    public boolen isEmpty(){
+        if(topo == null){
+            return true;
+        } else{
+            return false;
+        }
+    }
+
+    public void push(int e){
+        No elemento = new No();
+        elemento.dado = e;
+        if(isEmpty()){
+            topo = elemento;
+        } else{
+            elemento.proximo = topo;
+            topo = elemento;
+        }
+    }
+
+    //push()
+    //pop()
+
+}
